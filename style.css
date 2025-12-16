@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333; 
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo img {
+    width: 50px;
+}
+
+.nav-links a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-links a:hover {
+    color: green; /* green hover */
+}
+
+.arrow {
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.search-icon,
+.cart-icon i {
+    font-size: 18px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.cart-icon {
+    position: relative;
+    margin-right: 20px;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background: green;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+.contact-btn {
+    background: green;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.contact-btn:hover {
+    background: green;
+}
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 80px 50px;
+    gap: 40px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: green;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+/* HERO IMAGE */
+.hero-image {
+    flex: 1;
+    position: relative;
+}
+
+.main-img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* Hot Spicy Text */
+.hot-text {
+    position: absolute;
+    bottom: 15px;
+    left: -20px;
+    background: white;
+    color: Black;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-weight: bold;
+    transform: rotate(-10deg);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+
+/* Small attached images */
+.small-images {
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.small-images img {
+    width: 150px; /* small thumbnails */
+    height: 70px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .small-images {
+        bottom: -15px;
+        justify-content: center;
+    }
+
+    .small-images img {
+        width: 80px;
+        height: 60px;
+    }
+}
+
+
+/* CATEGORIES */
+.categories {
+    padding: 80px 50px;
+    background: #f8f8f8;
+}
+
+.categories h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.category-list {
+    display: flex;
+    gap: 30px;
+}
+
+.category-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    flex: 1;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+.category-card img {
+    width: 100px;         /* size of the circle */
+    height: 100px;
+    object-fit: cover;    /* ensures image fills circle nicely */
+    border-radius: 50%;   /* makes it circular */
+    margin-bottom: 15px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 25px;
+    background: #222;
+    color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .nav-links a {
+        margin: 10px 0;
+    }
+
+    .nav-right {
+        margin-top: 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .category-list {
+        flex-direction: column;
+    }
+}

@@ -1,5 +1,107 @@
 <!DOCTYPE html>
-<HTML>
-    <H1>HELLO WORLD</H1>
-</HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Foodi Restaurant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">
+        <img src="images/logo.png" alt="Foodi Logo">
+    </div>
+
+    <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Menu </a>
+        <a href="#">Services</span></a>
+        <a href="#">Offers</a>
+    </nav>
+
+    <div class="nav-right">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <div class="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-badge">8</span>
+        </div>
+        <a href="#contact" class="contact-btn">
+            <i class="fa-solid fa-phone"></i> Contact
+        </a>
+    </div>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>Delicious Food</h1>
+        <p>
+            Enjoy freshly prepared meals made with quality ingredients.
+            Taste the perfect blend of flavor and comfort.
+        </p>
+        <a href="#categories" class="btn">Order Now</a>
+         <a href="#categories" class="btn">Watch Video</a>
+         
+    </div>
+
+   <div class="hero-image">
+    <img src="images/food.jpg" alt="Main Food Image" class="main-img">
+    <span class="hot-text">Hot Spicy Food</span>
+
+    <!-- Small attached images -->
+    <div class="small-images">
+        <img src="images/food1.png" alt="Food 1">
+        <img src="images/food2.png" alt="Food 2">
+    </div>
+</div>
+
+</section>
+
+<!-- CATEGORIES -->
+<section id="categories" class="categories">
+    <h2 style= color:red>CUSTOMER FAVOURITES</h2>
+    <h2>Popular Categories</h2>
+
+    <div class="category-list">
+        <div class="category-card">
+              <img src="images/main_dish.png" alt="Main Dish">
+            <h3>Main Dish</h3>
+            <p>(86 Dishes)</p>
+        </div>
+
+        <div class="category-card">
+             <img src="images/breakfast.png" alt="Breakfast">
+            <h3>Breakfast</h3>
+            <p>(12 Breakfast)</p>
+        </div>
+
+        <div class="category-card">
+             <img src="images/dessert.png" alt="Dessert">
+              
+            <h3>Dessert</h3>
+            <p>(48 Dessert)</p>
+        </div>
+
+         <div class="category-card">
+            <img src="images/browse_all.png" alt="Browse All">
+            <h3>Browse all</h3>
+            <p>(255 items)</p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT / FOOTER -->
+<footer id="contact" class="footer">
+    <p>📞 +977 9800000000 | 📍 Kathmandu, Nepal</p>
+    <p>© 2025 Foodi Restaurant. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
