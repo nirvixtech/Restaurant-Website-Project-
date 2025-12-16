@@ -248,7 +248,7 @@ body {
 }
 
 .nav-btn:hover {
-    background-color:;
+    background-color: green;
 }
 /* TESTIMONIALS */
 .testimonials {
@@ -296,7 +296,8 @@ body {
     line-height: 1.6;
 }
 
-.customer-name {
+.customer-feedback {
+    color: black;
     font-weight: bold;
 }
 
@@ -313,6 +314,101 @@ body {
     }
 }
 
+/* OUR STORY & SERVICES */
+.story-services {
+    padding: 80px 50px;
+}
+
+.story-container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+/* Left Text */
+.story-text {
+    flex: 1;
+}
+
+.story-text h3 {
+    padding: 20px;
+    color: red;
+    margin-bottom: 10px;
+}
+
+.story-text h2 {
+    padding: 20px;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.story-text p {
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.explore-btn {
+    padding: 12px 30px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.explore-btn:hover {
+    background-color: green;
+}
+
+/* Right Services Grid */
+.services-grid {
+    align-items: center;
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.service-box {
+    align-items: center;
+    padding: 25px;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.service-box h4 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.service-box p {
+   
+    color: green;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.5;
+}
+.service-icon {
+    width: 50px;
+    margin: 0 auto 15px auto;
+    display: block;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .story-container {
+        flex-direction: column;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
 /* FOOTER */
 .footer {
