@@ -224,6 +224,94 @@ body {
 .special-dishes h2 {
     margin-bottom: 15px;
 }
+.special-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    background-color:;
+}
+/* TESTIMONIALS */
+.testimonials {
+    padding: 100px 50px;
+}
+
+.testimonial-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+/* Chef Image */
+.chef-image {
+    position: relative;
+    flex: 1;
+}
+
+.chef-image img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 100px;
+}
+
+
+/* Text Section */
+.testimonial-text {
+    flex: 1;
+}
+
+.testimonial-text h3 {
+    color: pink;
+    margin-bottom: 50px;
+}
+
+.testimonial-text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.testimonial-desc {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.customer-name {
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .testimonial-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .chef-badge {
+        left: 50%;
+        transform: translateX(-50%) rotate(-10deg);
+    }
+}
 
 
 /* FOOTER */
