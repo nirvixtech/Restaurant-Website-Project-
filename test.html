@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodi Restaurant</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Custom Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#22c55e',
+                        secondary: '#ef4444',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+
+    <!-- NAVBAR -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-4 lg:px-8 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <img src="images/logo.png" alt="Foodi Logo" class="h-12 w-auto">
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-gray-700 hover:text-primary font-medium transition-colors duration-200">Home</a>
+                    <a href="#" class="text-gray-700 hover:text-primary font-medium transition-colors duration-200">Menu</a>
+                    <a href="#" class="text-gray-700 hover:text-primary font-medium transition-colors duration-200">Services</a>
+                    <a href="#" class="text-gray-700 hover:text-primary font-medium transition-colors duration-200">Offers</a>
+                </div>
+
+                <!-- Right Side Icons & Button -->
+                <div class="flex items-center space-x-6">
+                    <i class="fa-solid fa-magnifying-glass text-gray-700 hover:text-primary cursor-pointer text-xl transition-colors duration-200"></i>
+                    <div class="relative cursor-pointer">
+                        <i class="fa-solid fa-cart-shopping text-gray-700 hover:text-primary text-xl transition-colors duration-200"></i>
+                        <span class="absolute -top-2 -right-2 bg-primary text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">8</span>
+                    </div>
+                    <a href="#contact" class="bg-primary text-white px-6 py-2 rounded-full hover:bg-green-600 transition-all duration-200 flex items-center gap-2 shadow-md hover:shadow-lg">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>Contact</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="container mx-auto px-4 lg:px-8 py-16 lg:py-24">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <!-- Hero Text -->
+            <div class="text-center lg:text-left">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                    Dive into Delights of Delectable Food
+                </h1>
+                <p class="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
+                    Where Each Plate Weaves a Story of Culinary Mastery and Passionate Craftmanship
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <a href="#categories" class="bg-primary text-white px-8 py-4 rounded-full font-semibold hover:bg-green-600 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                        Order Now
+                    </a>
+                    <a href="#categories" class="bg-white text-primary border-2 border-primary px-8 py-4 rounded-full font-semibold hover:bg-primary hover:text-white transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                        Watch Video
+                    </a>
+                </div>
+            </div>
+
+            <!-- Hero Image -->
+            <div class="relative">
+                <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+                    <img src="images/food.jpg" alt="Main Food Image" class="w-full h-auto object-cover">
+                </div>
+                <span class="absolute bottom-8 left-0 bg-white text-gray-900 px-6 py-3 rounded-xl font-bold shadow-xl transform -rotate-6 hover:rotate-0 transition-transform duration-200">
+                    Hot Spicy Food🌶️
+                </span>
+                
+                <!-- Small attached images -->
+                <div class="absolute -bottom-6 right-0 flex gap-4">
+                    <img src="images/food1.png" alt="Food 1" class="w-32 h-20 md:w-40 md:h-24 object-cover rounded-xl border-4 border-white shadow-xl">
+                    <img src="images/food2.png" alt="Food 2" class="w-32 h-20 md:w-40 md:h-24 object-cover rounded-xl border-4 border-white shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section id="categories" class="bg-gray-100 py-20">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-red-500 text-sm font-semibold uppercase tracking-wider mb-2">CUSTOMER FAVOURITES</h2>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900">Popular Categories</h2>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+                <div class="bg-white p-8 rounded-2xl text-center shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <img src="images/main_dish.png" alt="Main Dish" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover shadow-md">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Main Dish</h3>
+                    <p class="text-gray-600">(86 Dishes)</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl text-center shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <img src="images/breakfast.png" alt="Breakfast" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover shadow-md">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Breakfast</h3>
+                    <p class="text-gray-600">(12 Breakfast)</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl text-center shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <img src="images/dessert.png" alt="Dessert" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover shadow-md">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Dessert</h3>
+                    <p class="text-gray-600">(48 Dessert)</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl text-center shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <img src="images/browse_all.png" alt="Browse All" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover shadow-md">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Browse all</h3>
+                    <p class="text-gray-600">(255 items)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SPECIAL DISHES -->
+    <section class="py-20">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-12">
+                <div>
+                    <h2 class="text-red-500 text-sm font-semibold uppercase tracking-wider mb-2">SPECIAL DISHES</h2>
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900">Stand out dishes from our menu</h2>
+                </div>
+
+                <div class="flex gap-4 mt-6 md:mt-0">
+                    <button class="w-12 h-12 rounded-full bg-primary text-white hover:bg-green-600 transition-all duration-200 shadow-lg hover:shadow-xl flex items-center justify-center text-xl">
+                        ‹
+                    </button>
+                    <button class="w-12 h-12 rounded-full bg-primary text-white hover:bg-green-600 transition-all duration-200 shadow-lg hover:shadow-xl flex items-center justify-center text-xl">
+                        ›
+                    </button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <img src="images/dish1.jpg" alt="Fattoush salad" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Fattoush salad</h3>
+                        <p class="text-gray-600 mb-4">Description of the item</p>
+                        <p class="text-2xl font-bold text-primary">$24.00</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <img src="images/dish2.png" alt="Vegetable Salad" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Vegetable Salad</h3>
+                        <p class="text-gray-600 mb-4">Description of the item</p>
+                        <p class="text-2xl font-bold text-primary">$26.00</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <img src="images/dish3.png" alt="Egg vegi salad" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Egg vegi salad</h3>
+                        <p class="text-gray-600 mb-4">Description of the item</p>
+                        <p class="text-2xl font-bold text-primary">$23.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Chef Image -->
+                <div class="order-2 lg:order-1">
+                    <img src="images/chef.png" alt="Best Chef" class="w-full max-w-2xl mx-auto rounded-3xl shadow-2xl">
+                </div>
+
+                <!-- Testimonial Text -->
+                <div class="order-1 lg:order-2">
+                    <h3 class="text-red-500 text-sm font-semibold uppercase tracking-wider mb-4">TESTIMONIALS</h3>
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                        What Our Customers Say About Us
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        "I had the pleasure of dining at Foodi last night, and I'm still raving about the experience! The attention to detail in presentation and service was impeccable"
+                    </p>
+                    <p class="text-gray-900 font-bold mb-2">Customer Feedback</p>
+                    <p class="text-xl font-semibold text-yellow-500">★ 4.9 (18.9k reviews)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR STORY & SERVICES -->
+    <section class="py-20">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Side - Story Text -->
+                <div>
+                    <h3 class="text-red-500 text-sm font-semibold uppercase tracking-wider mb-4">OUR STORY AND SERVICES</h3>
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                        Our Culinary Journey And Services
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        Rooted in passion, we curate unforgettable dining experiences and offer exceptional services, blending culinary artistry with warm hospitality.
+                    </p>
+                    <button class="bg-primary text-white px-8 py-4 rounded-full font-semibold hover:bg-green-600 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                        Explore
+                    </button>
+                </div>
+
+                <!-- Right Side - Services Grid -->
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 text-center">
+                        <img src="images/catering.png" alt="Catering Icon" class="w-16 h-16 mx-auto mb-4">
+                        <h4 class="text-green-600 font-bold text-lg mb-2">CATERING</h4>
+                        <p class="text-gray-600 text-sm">Delight your guests with our flavors and presentation</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 text-center">
+                        <img src="images/delivery.png" alt="Fast Delivery Icon" class="w-16 h-16 mx-auto mb-4">
+                        <h4 class="text-green-600 font-bold text-lg mb-2">FAST DELIVERY</h4>
+                        <p class="text-gray-600 text-sm">We deliver your order promptly to your door</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 text-center">
+                        <img src="images/online_order.png" alt="Online Ordering Icon" class="w-16 h-16 mx-auto mb-4">
+                        <h4 class="text-green-600 font-bold text-lg mb-2">ONLINE ORDERING</h4>
+                        <p class="text-gray-600 text-sm">Explore menu & order with ease using our Online Ordering</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 text-center">
+                        <img src="images/gift_card.png" alt="Gift Card Icon" class="w-16 h-16 mx-auto mb-4">
+                        <h4 class="text-green-600 font-bold text-lg mb-2">GIFT CARD</h4>
+                        <p class="text-gray-600 text-sm">Give the gift of exceptional dining with Foodi Gift Cards</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-gray-300 py-16">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- Logo & Description -->
+                <div>
+                    <img src="images/logo.png" alt="Foodi Logo" class="h-12 w-auto mb-4">
+                    <p class="text-gray-400 leading-relaxed">
+                        Savor the artistry where every dish is a culinary masterpiece.
+                    </p>
+                </div>
+
+                <!-- Useful Links -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-4">Useful Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-primary transition-colors duration-200">About Us</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors duration-200">Events</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors duration-200">Blogs</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors duration-200">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Main Menu -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-4">Main Menu</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-primary transition-colors duration-200">Home</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors duration-200">Offer</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors duration-200">Menu</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors duration-200">Reservations</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-4">Contact Us</h4>
+                    <ul class="space-y-2">
+                        <li><a href="mailto:example@email.com" class="hover:text-primary transition-colors duration-200">example@email.com</a></li>
+                        <li><a href="tel:+5686544778" class="hover:text-primary transition-colors duration-200">+56 86544778</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors duration-200">Social Media</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <div class="flex gap-6">
+                        <a href="#" class="hover:text-primary transition-colors duration-200">Facebook</a>
+                        <a href="#" class="hover:text-primary transition-colors duration-200">Instagram</a>
+                        <a href="#" class="hover:text-primary transition-colors duration-200">Twitter</a>
+                        <a href="#" class="hover:text-primary transition-colors duration-200">YouTube</a>
+                    </div>
+                    <p class="text-center text-gray-400 text-sm">
+                        Copyright © 2023 Dscode | All rights reserved
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
